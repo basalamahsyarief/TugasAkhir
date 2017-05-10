@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/photo335">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="50dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="My Landmark | "
+                    android:id="@+id/textView11"
+                    android:textColor="#ffffff"
+                    android:typeface="normal"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:gravity="center|center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Detail"
+                    android:id="@+id/textView13"
+                    android:textColor="#ffffff"
+                    android:typeface="normal"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="#010101"
+                android:layout_height="match_parent"
+                android:text="ID Iklan"
+                android:id="@+id/textView4"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtid"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:autoText="false"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="#010101"
+                android:layout_height="match_parent"
+                android:text="Judul Iklan"
+                android:id="@+id/textView3"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtjudul"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_below="@+id/txtid"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Latitude"
+                android:textColor="#010101"
+                android:id="@+id/textView5"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtlatitude"
+                android:textColor="#010101"
+                android:layout_below="@+id/textView3"
+                android:layout_toRightOf="@+id/textView5"
+                android:textSize="15dp"
+                android:layout_alignRight="@+id/txtjudul"
+                android:layout_alignEnd="@+id/txtjudul"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Longitude"
+                android:textColor="#010101"
+                android:id="@+id/textView10"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/txtlongitude"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtlongitude"
+                android:textColor="#010101"
+                android:layout_below="@+id/textView5"
+                android:layout_alignLeft="@+id/txtjudul"
+                android:textSize="15dp"
+                android:layout_alignRight="@+id/txtlatitude"
+                android:layout_alignEnd="@+id/txtlatitude"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="#010101"
+                android:id="@+id/textView7"
+                android:textSize="15dp"
+                android:layout_below="@+id/txtlongitude"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtalamat"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_below="@+id/txtlongitude"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_alignRight="@+id/txtlongitude"
+                android:layout_alignEnd="@+id/txtlongitude"
+                android:layout_alignBottom="@+id/textView7"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:maxHeight="50dp"
+                android:minHeight="30dp"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="#010101"
+                android:layout_height="match_parent"
+                android:text="Harga"
+                android:id="@+id/textView16"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView36"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/textView16"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:autoText="false"
+                android:background="#ffbb10"
+                android:text="Rp " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txthargaiklan"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/textView16"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:autoText="false"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="#010101"
+                android:layout_height="match_parent"
+                android:text="Nomor Telepon"
+                android:id="@+id/textView17"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtcp"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_alignTop="@+id/textView17"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toEndOf="@+id/textView17"
+                android:autoText="false"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Sertifikasi"
+                android:textColor="#010101"
+                android:id="@+id/textView34"
+                android:textSize="15dp"
+                android:layout_below="@+id/txtlongitude"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtsertifikasi"
+                android:textColor="#010101"
+                android:textSize="15dp"
+                android:layout_below="@+id/txtlongitude"
+                android:layout_toRightOf="@+id/textView34"
+                android:layout_alignRight="@+id/txtlongitude"
+                android:layout_alignEnd="@+id/txtlongitude"
+                android:layout_alignBottom="@+id/textView34"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:maxHeight="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="#010101"
+                android:id="@+id/textView9"
+                android:textSize="15dp"
+                android:textIsSelectable="false"
+                android:layout_above="@+id/back_user_main"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="141dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdeskripsi"
+                android:textColor="#010101"
+                android:layout_alignLeft="@+id/txtlongitude"
+                android:textSize="15dp"
+                android:layout_alignRight="@+id/txtlongitude"
+                android:layout_alignEnd="@+id/txtlongitude"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_above="@+id/back_user_main"
+                android:background="#ffbb10"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:maxHeight="50dp"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Edit Iklan"
+                    android:id="@+id/edit_iklan"
+                    android:layout_below="@+id/textView9"
+                    android:layout_alignRight="@+id/txtdeskripsi"
+                    android:layout_alignEnd="@+id/txtdeskripsi"
+                    android:layout_toRightOf="@+id/back_user_main"
+                    android:layout_toEndOf="@+id/back_user_main"
+                    android:textColor="#010101"
+                    android:background="#1E88E5"
+                    android:backgroundTint="#ffa76d"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Hapus Iklan"
+                    android:id="@+id/hapus_iklan"
+                    android:layout_below="@+id/textView9"
+                    android:layout_alignRight="@+id/txtdeskripsi"
+                    android:layout_alignEnd="@+id/txtdeskripsi"
+                    android:layout_toRightOf="@+id/back_user_main"
+                    android:layout_toEndOf="@+id/back_user_main"
+                    android:textColor="#010101"
+                    android:background="#1E88E5"
+                    android:backgroundTint="#ffa76d"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

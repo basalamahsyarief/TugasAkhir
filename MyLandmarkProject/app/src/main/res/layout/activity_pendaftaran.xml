@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo335">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pendaftaran"
+                    android:id="@+id/textView25"
+                    android:textColor="#ffffff"
+                    android:typeface="normal"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp"
+                    android:gravity="center|center_horizontal" />
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_ktp"
+                android:textColor="#010101"
+                android:textColorHint="#535353"
+                android:hint="No. KTP"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama"
+                android:hint="Nama Lengkap"
+                android:textColorHint="#535353"
+                android:textColor="#010101"
+                android:inputType="textPersonName"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textColorHint="#535353"
+                android:textColor="#010101"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:textColorHint="#535353"
+                android:textColor="#010101"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="DAFTAR"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="Isilah semua inputan"
+                android:textColor="#010101" />
+        </LinearLayout>
+
+</ScrollView>
